@@ -1,0 +1,10 @@
+<div class="single_character">
+  <img [src]="character?.image" [alt]="character?.name" />
+  <h3>
+    {{ character?.name }}
+  </h3>
+  <span> {{ character?.ki }} </span>
+  <p>
+    {{ character?.description?.substring(0, 100) }}...
+  </p>
+</div>

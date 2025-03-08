@@ -1,0 +1,7 @@
+<h2>Lista de personajes</h2>
+<div class="grid_list_characters">
+  <article *ngFor="let character of list">
+    <app-single-character [character]="character">
+    </app-single-character>
+  </article>
+</div>
