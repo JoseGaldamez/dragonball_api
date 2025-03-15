@@ -1,7 +1,19 @@
 <h2>Lista de personajes</h2>
-<div class="grid_list_characters">
-  <article *ngFor="let character of list">
-    <app-single-character [character]="character">
-    </app-single-character>
-  </article>
-</div>
+<ion-list>
+  <div class="grid_list_characters">
+    <article *ngFor="let character of list">
+      <app-single-character [character]="character">
+      </app-single-character>
+    </article>
+  </div>
+
+  <ion-infinite-scroll (ionInfinite)="traerMasPersonajes($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <!-- <div class="footer_list">
+    <button (click)="obtenerAnterior()">Anterior</button>
+    <button (click)="obtenerSiguiente()">Siguiente</button>
+  </div> -->
+
+</ion-list>
