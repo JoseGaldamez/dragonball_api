@@ -11,3 +11,12 @@ h2 {
 .grid_list_characters article {
   text-align: center;
 }
+
+.footer_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  button {
+    padding: 10px;
+  }
+}

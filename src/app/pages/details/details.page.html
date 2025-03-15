@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <main>
+
+    <h2>
+      {{character?.name}}
+    </h2>
+
+    <div class="image-container">
+      <img [src]="character?.image" [alt]="character?.name" />
+    </div>
+
+    <p>
+      {{character?.description}}
+    </p>
+
+    <ion-button expand="full" fill="outline" (click)="irHaciaAtras()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+
+  </main>
+</ion-content>
